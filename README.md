@@ -15,7 +15,7 @@ The lab represents a small fictional company (**adlab**) with three departments 
 
 ## 🚧 Current Status
 
-**In progress.** Core infrastructure (network, AD DS, DNS, DHCP, OU/user/group structure, a domain-joined client, a Group Policy tested end-to-end, and a second domain-joined member server running IIS) is complete and validated. A security baseline and structured troubleshooting scenarios are still ahead.
+**In progress.** Core infrastructure (network, AD DS, DNS, DHCP, OU/user/group structure, a domain-joined client, a tested Group Policy, a second member server running IIS, and a validated security baseline) is complete. Structured troubleshooting scenarios and final testing are still ahead.
 
 See [`ROADMAP.md`](./ROADMAP.md) for the full phase breakdown.
 
@@ -29,6 +29,8 @@ See [`ROADMAP.md`](./ROADMAP.md) for the full phase breakdown.
 - A domain-joined Windows client (`CLIENT01`), confirmed with a successful domain user login
 - A Group Policy restricting Control Panel access for one department, validated with both a positive test (restricted where expected) and a negative test (unaffected elsewhere)
 - A second, dedicated Member Server (`WEB01`) running IIS, domain-joined and reachable from the client by DNS name — not just IP
+- A domain-wide password and account lockout policy, validated by triggering an actual lockout and confirming it from both the client and admin side
+- An IP-restricted IIS site, validated with an allowed request (success) and a disallowed request (403 Forbidden)
 
 Full details, including design decisions and validation results, are in [`docs/`](./docs/).
 
