@@ -34,6 +34,10 @@ Applied at the same domain level, alongside the password policy.
 | Checked the account in ADUC (Account tab) | Confirmed: *"This account is currently locked out on this Active Directory Domain Controller"*, with an Unlock option available |
 | Unlocked the account via ADUC and re-attempted login with the correct password | Successful login, confirming the unlock took effect |
 
+![Login screen showing the account is locked out](../screenshots/account-lockout-message.png)
+
+![ADUC confirming the account is locked out, with the unlock option available](../screenshots/account-lockout-aduc-confirmation.png)
+
 **Conclusion:** the policy was validated from both the client side (the user-facing lockout message) and the administrative side (ADUC reflecting the locked state and offering the unlock control), confirming end-to-end enforcement.
 
 ## 4. IIS Access Restriction (IP-Based)
@@ -55,6 +59,8 @@ This mirrors a common real-world scenario: an internal administrative site that 
 |---|---|---|
 | Request from an allowed IP | DC01 (192.168.10.10) | IIS default page loaded normally |
 | Request from a non-allowed IP | CLIENT01 (DHCP-assigned, outside the allow list) | **403 - Forbidden: Access is denied** |
+
+![403 Forbidden response when accessing WEB01 from a non-allowed IP](../screenshots/iis-403-forbidden-from-client.png)
 
 **Conclusion:** the restriction was proven in both directions — allowed traffic passes, and non-allowed traffic (even from a legitimate domain member) is blocked. This confirms the rule is enforced by IP, not by domain membership or authentication.
 

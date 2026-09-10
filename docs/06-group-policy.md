@@ -30,12 +30,16 @@ The OU structure separates `Users` from `Computers` within each department speci
 | Logged in as a Sales user (`ytarek`/`nsamir`) | Control Panel access blocked with: *"This operation has been cancelled due to restrictions in effect on this computer. Please contact your system administrator."* |
 | `gpresult /r` | `Sales-Restrict-ControlPanel` listed under Applied Group Policy Objects |
 
+![Control Panel access blocked for a Sales user](../screenshots/gpo-restriction-message.png)
+
 ### Negative test (IT user — policy should NOT apply)
 
 | Step | Result |
 |---|---|
 | Logged in as an IT user (`ohassan`) | Control Panel opened normally, no restriction |
 | `gpresult /r` | Applied Group Policy Objects: **N/A** — confirms no unintended policy leakage to other OUs |
+
+![Control Panel opening normally for an IT user, outside the GPO's scope](../screenshots/gpo-negative-test-control-panel.png)
 
 **Conclusion:** the GPO's scope was validated in both directions — it correctly restricts its intended target and does not affect any other part of the domain. This two-sided validation (positive + negative test) is what confirms the GPO linking and OU design are both working as intended, not just that a restriction happens to be active somewhere.
 

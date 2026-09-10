@@ -7,6 +7,8 @@
 
 A hands-on lab simulating a small organization's core Windows Server infrastructure — built from scratch in VMware Workstation, focused on understanding how Active Directory, DNS, and DHCP actually depend on each other, not just configuring them in isolation.
 
+![Network Architecture Diagram](./diagrams/architecture-diagram.svg)
+
 ## 📖 Overview
 
 This project is part of my ongoing, practical exploration of infrastructure, networking, and system administration alongside my CS/AI studies. I'm learning by building: designing the network first, then implementing each service deliberately, validating every step, and documenting the reasoning — not just the commands.

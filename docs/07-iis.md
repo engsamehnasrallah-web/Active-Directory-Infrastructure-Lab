@@ -42,6 +42,8 @@ Attempting the domain join before step 2 typically fails with an error indicatin
 | Remote access by IP | CLIENT01 | `http://192.168.10.11` | IIS default page loaded successfully |
 | Remote access by domain name | CLIENT01 | `http://web01.adlab.local` | IIS default page loaded successfully — confirms DNS automatically registered WEB01's record upon domain join |
 
+![WEB01's IIS default page loaded by DNS name](../screenshots/iis-access-allowed-from-dc01.png)
+
 **Conclusion:** the full chain was validated end-to-end — a separately built, domain-joined member server, automatically registered in DNS, serving a web page reachable by name (not just IP) from another domain-joined machine. This confirms DNS, AD DS, and IIS are functioning together correctly across multiple servers, not just in isolation on a single box.
 
 ## 6. Next Steps
