@@ -1,6 +1,6 @@
 # 🖥️ Active Directory & Windows Server Infrastructure Lab
 
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Status](https://img.shields.io/badge/status-v1.0.0%20released-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-VMware%20Workstation-0091DA)
 ![Stack](https://img.shields.io/badge/stack-AD%20DS%20%7C%20DNS%20%7C%20DHCP%20%7C%20IIS-informational)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -17,9 +17,9 @@ The lab represents a small fictional company (**adlab**) with three departments 
 
 ## 🚧 Current Status
 
-**In progress.** Core infrastructure (network, AD DS, DNS, DHCP, OU/user/group structure, a domain-joined client, a tested Group Policy, a second member server running IIS, and a validated security baseline) is complete. Structured troubleshooting scenarios and final testing are still ahead.
+**`v1.0.0` released.** The core infrastructure — network, AD DS, DNS, DHCP, OU/user/group structure, a domain-joined client, a tested Group Policy, a second member server running IIS, and a validated security baseline — is complete, tested, and documented. Additional troubleshooting scenarios and further hardening are planned for future releases.
 
-See [`ROADMAP.md`](./ROADMAP.md) for the full phase breakdown.
+See [`ROADMAP.md`](./ROADMAP.md) for the full phase breakdown and [`CHANGELOG.md`](./CHANGELOG.md) for release notes.
 
 ## ✅ What's Been Built So Far
 

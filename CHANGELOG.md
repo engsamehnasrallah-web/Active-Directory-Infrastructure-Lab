@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) prin
 
 ## [Unreleased]
 
+Future work: additional troubleshooting scenarios (DHCP failure, GPO not applying, IIS access issues), further security hardening.
+
+## [1.0.0] - 2026-09-11
+
 ### Added
 - Isolated VMware Host-only network (VMnet2, 192.168.10.0/24) designed before any service installation
 - Domain Controller (DC01) with static IP, AD DS, and DNS (domain: adlab.local)
@@ -31,4 +35,4 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) prin
 
 ## Notes
 
-This project has not yet reached a tagged release. A `v1.0.0` release will be created once the full Definition of Done checklist (see [`ROADMAP.md`](./ROADMAP.md)) is complete, including final documentation review and additional troubleshooting scenarios.
+This is the first tagged release (`v1.0.0`) of the project: the full core infrastructure is built, secured, tested, and documented. Additional troubleshooting scenarios and further hardening will follow in future releases, tracked in [`ROADMAP.md`](./ROADMAP.md).

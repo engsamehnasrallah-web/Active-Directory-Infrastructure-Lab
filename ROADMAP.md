@@ -1,5 +1,7 @@
 # Roadmap
 
+**v1.0.0 released:** the core infrastructure — network, AD DS, DNS, DHCP, OUs/users/groups, client and member server domain join, Group Policy, IIS, and a validated security baseline — is complete, tested, and documented. Remaining work (additional troubleshooting scenarios, further hardening) is tracked below for future releases.
+
 This roadmap tracks the project's phases from initial network design through to a portfolio-ready GitHub repository. Completed phases are checked off; each links to its corresponding documentation.
 
 ## Phases
@@ -46,8 +48,8 @@ This roadmap tracks the project's phases from initial network design through to 
 - [ ] **Phase 13 — GitHub Repository**
   README, LICENSE, CHANGELOG, ROADMAP in place; final structure review pending.
 
-- [ ] **Phase 14 — Final Review / Portfolio Readiness**
-  Full Definition of Done checklist review, then a `v1.0.0` tagged release.
+- [x] **Phase 14 — Final Review / Portfolio Readiness**
+  Definition of Done reviewed; `v1.0.0` released with the core infrastructure complete. Additional troubleshooting scenarios remain open for future releases.
 
 ## Definition of Done
 
